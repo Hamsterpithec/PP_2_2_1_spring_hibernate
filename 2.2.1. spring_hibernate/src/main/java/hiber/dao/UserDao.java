@@ -10,4 +10,6 @@ public interface UserDao {
 
     List<User> listUsers();
 
+    @SuppressWarnings("unchecked")
+    User getUserByCar(String model, int series);
 }
