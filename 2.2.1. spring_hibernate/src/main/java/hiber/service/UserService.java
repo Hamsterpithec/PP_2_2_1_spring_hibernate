@@ -11,5 +11,4 @@ public interface UserService {
 
     List<User> listUsers();
 
-
 }

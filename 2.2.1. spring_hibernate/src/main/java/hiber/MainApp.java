@@ -32,12 +32,11 @@ public class MainApp {
         userService.add(user3.setCar(suzuki).setUser(user3));
         userService.add(user4.setCar(lada).setUser(user4));
 
-        // пользователи с машинами
+
         for (User user : userService.listUsers()) {
             System.out.println(user + " " + user.getCar());
         }
 
-        // достать юзера, владеющего машиной по ее модели и серии
         System.out.println(userService.getUserByCar("BMW", 325));
 
 

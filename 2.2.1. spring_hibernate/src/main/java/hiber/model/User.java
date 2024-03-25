@@ -73,6 +73,11 @@ public class User {
         return car;
     }
 
+    public Car setCar(Car car) {
+        this.car = car;
+        return car;
+    }
+
 
     @Override
     public String toString() {
