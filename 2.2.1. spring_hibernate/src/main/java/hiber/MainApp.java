@@ -8,7 +8,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import javax.persistence.NoResultException;
 import java.sql.SQLException;
-import java.util.List;
 
 public class MainApp {
     public static void main(String[] args) throws SQLException {
@@ -38,8 +37,6 @@ public class MainApp {
         }
 
         System.out.println(userService.getUserByCar("BMW", 325));
-
-
         try {
             User notFoundUser = userService.getUserByCar("GAZ", 4211);
         } catch (NoResultException e) {
