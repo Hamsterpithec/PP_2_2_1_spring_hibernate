@@ -22,7 +22,8 @@ public class User {
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
     private Car car;
 
-    public User() {
+    public User(Car car) {
+        this.car = car;
     }
 
 
@@ -30,6 +31,10 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public User() {
+
     }
 
     public Long getId() {
@@ -68,10 +73,6 @@ public class User {
         return car;
     }
 
-    public Car setCar(Car car) {
-        this.car = car;
-        return car;
-    }
 
     @Override
     public String toString() {

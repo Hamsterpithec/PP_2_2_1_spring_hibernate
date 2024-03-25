@@ -24,7 +24,8 @@ public class Car {
     private User user;
 
 
-    public Car() {
+    public Car(User user) {
+        this.user = user;
     }
 
     public Car(String model, int series) {
@@ -60,10 +61,6 @@ public class Car {
         return user;
     }
 
-    public User setUser(User user) {
-        this.user = user;
-        return user;
-    }
 
     @Override
     public String toString() {
